@@ -9,7 +9,7 @@ Analyze the air quality around you and live-stream the data automatically via In
 
 ### Methods
 1) Set up your Raspberry Pi (https://www.raspberrypi.org/documentation/setup/)
-2) Set up a free Ubidots Education account and install Ubidots for python (See https://raspi-temp-rep.readthedocs.io/en/master/ubidots/#ubidots-python-api-client)
+2) Set up a free Ubidots Education account and install Ubidots for Python (See https://raspi-temp-rep.readthedocs.io/en/master/ubidots/#ubidots-python-api-client)
 3) In Ubidots, set your device name and create two variables. Take note of your API key found by clicking on your username at the top-right corner and going to API Credentials, as well as the API ID of each of your variables.
 3) Place the `main.py` Python script into your Raspberry Pi. Verify that the port is connected to '/dev/ttyUSB0'. Make sure you change the API label and API Variable IDs to the ones you obtained on the Ubidots website or it will not work.
 3) Run main.py in the Python 3 Shell within your Raspberry Pi.
