@@ -33,10 +33,10 @@ while True:
     #https://raspi-temp-rep.readthedocs.io/en/master/ubidots/#ubidots-python-api-client
 
     ######Create an "API" object
-    api = ApiClient("A1E-3f71cbb44ff5809eca0c202dbac40221cf44") #API Key goes here
+    api = ApiClient("A1E-3f71cbb44ff5809eca0c202dbac40221cf44") #Change API Key!
     ######Create a "Variable" object
-    small_var = api.get_variable("5b80d8b5c03f9755676f791b")
-    large_var = api.get_variable("5b7e25f5c03f973ef812404f") #Variable API ID goes here
+    small_var = api.get_variable("5b80d8b5c03f9755676f791b") #Change API Variable ID!
+    large_var = api.get_variable("5b7e25f5c03f973ef812404f") #Change API Variable ID!
     ######Calculation of PPM 2.5 and PPM 10
     #PPM 2.5 = (small - large)/100 micrograms per cubic meters
     #PPM 10 = (large/3) + PM2.5 micrograms per cubic meters
@@ -46,5 +46,3 @@ while True:
     ######Write the value to your variable in Ubidots
     small_var.save_value({'value':small_calc})
     large_var.save_value({'value':large_calc})
-
-#https://app.ubidots.com/ubi/getchart/page/D2D3POf_hx-xN2s5ljrVWFStD7k
